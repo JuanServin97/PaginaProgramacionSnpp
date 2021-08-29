@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Robert Romero">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" href="imagenes/icon/favicon-72x72.png" type="image/x-png">
+    <title>Programación CTFP-PJ</title>
+    <meta name="description" content="Esta es una página para acceder a todas las informaciones importantes que necesitamos y no caben en la descripción del grupo de whatsApp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+  </head>
+  <body class="bg-blu-black">
+    <!--Inicio de nav menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-translucid">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand text-info" href="#">{ TS Programación S2 }</a>
+
+        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-info" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="documentos.html">Documentos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Editables</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/10tz24wU9bG1ERZeglDiKPlICaT5ZUsgwll9q-ZNAEUs/edit#gid=768262323" target="_blank">Planilla para escoger los<br>horarios para practicas presenciales</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Descargables
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="documents/Horario_De_Clases_S2.pdf" download="Horario_De_Clases_S2.pdf">Horario De Clases S2</a></li>
+                <li><a class="dropdown-item" href="documents/TECNICO SUPERIOR EN PROGRAMACIÓN DE APLICACIONES INFORMATICAS (2).pdf" download="TECNICO SUPERIOR EN PROGRAMACIÓN DE APLICACIONES INFORMATICAS (2).pdf">Malla curricular</a></li>
+                <li><a class="dropdown-item" href="documents/flash-on-english-for-mechanics-electronics-and-technical-assistance-dlscrib.com.pdf" download="flash-on-english-for-mechanics-electronics-and-technical-assistance-dlscrib.com.pdf">Libro de Ingles S1</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Fin del nav menu-->
+    <!--Base-->
+    <br>
+    <section class="card text-center bg-blu-black">
+      
+      <div class="card m-3 p-3 bg-blu">
+        <h2>Grupos de WhatsApp</h2>
+        <button type="button" onclick="enlaces('LenguajeC_Guarani')" class="btn blue-motion m-1">Lenguaje C y Guaraní S2</button>
+        <button type="button" onclick="enlaces('ArqPcSo')" class="btn blue-motion m-1">Arq. de PC y SO S2</button>
+        <button type="button" onclick="enlaces('PBD')" class="btn blue-motion m-1">Programación de BD S2</button>
+      </div>
+      
+      <div class="card m-3 p-3 bg-blu">
+        <h2>Classroom</h2>
+        <button type="button" title="Click para ir al classroom" onclick="enlaces('classArqSO')" class="btn blue-motion m-1">Arq. de PC y SO S2</button>
+        <button type="button" title="Click para ir al classroom" onclick="enlaces('classCG')" class="btn blue-motion m-1">Lenguaje C y Guaraní S2</button>
+        <button type="button" title="Click para ir al classroom" onclick="enlaces('classPBD')" class="btn blue-motion m-1">Programación de BD S2</button>
+        <button type="button" title="Click para ir al classroom" onclick="enlaces('classEstadistica')" class="btn blue-motion m-1">Estadística S2</button>
+      </div>
+
+    </section>
+  </body>
+</html>
